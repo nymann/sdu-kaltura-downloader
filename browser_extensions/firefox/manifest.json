@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "SDU BB Vod downloader",
+    "version": "1.0",
+    "description": "Helper for downloading blackboard videos at SDU.",
+    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/history-deleter",
+    "browser_action": {
+        "default_icon": {
+            "16": "icons/page-16.png",
+            "32": "icons/page-32.png"
+        }
+    },
+    "permissions": ["webRequest", "<all_urls>"],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
