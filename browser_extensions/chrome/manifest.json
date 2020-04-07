@@ -14,6 +14,6 @@
         "scripts": ["background.js"]
     },
     "permissions": [
-      "webRequest", "<all_urls>"
+      "webRequest", "<all_urls>", "downloads"
     ]
   }

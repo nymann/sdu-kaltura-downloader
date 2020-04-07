@@ -12,5 +12,7 @@ function download() {
         return;
     }
     var url_to_dl = m3u8_files.pop();
-    chrome.tabs.create({url: url_to_dl});
+    chrome.downloads.download({
+        url: url_to_dl
+    });
 }
