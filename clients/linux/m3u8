@@ -17,7 +17,7 @@ fi
 
 counter=0
 
-ffmpeg -y -hide_banner -loglevel info -i $1 -c copy -bsf:a aac_adtstoasc "$output_filename.mp4" 2>&1 \
+ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -y -hide_banner -loglevel info -i $1 -c copy -bsf:a aac_adtstoasc "$output_filename.mp4" 2>&1 \
 	| while read -r OUTPUT || [ -n "$OUTPUT" ]; do
 
 	if [ $counter = 4 ]; then
